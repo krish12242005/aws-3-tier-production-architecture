@@ -1,1 +1,0 @@
-# aws-3-tier-production-architecture
