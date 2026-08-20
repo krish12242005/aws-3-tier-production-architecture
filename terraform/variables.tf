@@ -43,3 +43,8 @@ variable "db_subnet_cidrs" {
     "10.0.22.0/24"
   ]
 }
+variable "database_password" {
+  description = "RDS master password"
+  type        = string
+  sensitive   = true
+}
