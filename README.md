@@ -1,5 +1,6 @@
 # AWS 3-Tier Production Architecture
 
+A production-style AWS 3-Tier Architecture designed using Terraform and AWS networking best practices.
 <p align="center">
   <img src="https://img.shields.io/badge/AWS-Cloud-orange?style=for-the-badge&logo=amazonaws&logoColor=white" />
   <img src="https://img.shields.io/badge/Terraform-IaC-7B42BC?style=for-the-badge&logo=terraform&logoColor=white" />
@@ -16,6 +17,27 @@
 
 ---
 
+## 👨‍💻 Author
+
+**Jaikrish – Junior Cloud Engineer**
+
+Focused on Cloud Computing, AWS, DevOps, Linux, and Networking.
+
+---
+
+## 🏗️ Architecture
+
+![AWS 3-Tier Architecture](architecture.png)
+
+The architecture follows a highly available 3-tier design:
+
+- **Presentation Tier** – Application Load Balancer
+- **Application Tier** – EC2 instances in private subnets
+- **Database Tier** – Amazon RDS in private subnets
+- **VPC** – Custom AWS network with public and private subnets
+- **Multi-AZ** – Designed for high availability
+
+---
 ## Project Overview
 
 This project demonstrates the design and implementation of a production-style **AWS 3-Tier Architecture** using Infrastructure as Code and containerization technologies.
@@ -34,10 +56,36 @@ The infrastructure is defined using Terraform modules to make the architecture r
 
 ---
 
+
+## ☁️ AWS Services
+
+- Amazon VPC
+- Application Load Balancer (ALB)
+- Amazon EC2
+- Amazon RDS
+- IAM
+- Amazon CloudWatch
+- Internet Gateway
+- NAT Gateway
+- Security Groups
+
+---
+
+## 🛠️ Technologies
+
+- Terraform
+- AWS
+- Linux
+- Git
+- GitHub
+- Infrastructure as Code (IaC)
+
+--- 
+
+
 ## Project Goal
 
 The primary goal of this project is to demonstrate how a production-style cloud application can be designed using AWS networking and DevOps best practices.
-
 Key objectives:
 
 - Design a secure AWS VPC
@@ -105,4 +153,11 @@ Key objectives:
 
 ## 🏗️ Architecture
 
-![AWS 3-Tier Production Architecture](./architecture.png)
+## 🚀 Deployment
+
+The infrastructure is provisioned using Terraform.
+
+### Initialize Terraform
+
+```bash
+terraform init
