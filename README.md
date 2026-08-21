@@ -102,3 +102,7 @@ Key objectives:
                     |
                     v
               Application Data
+
+## 🏗️ Architecture
+
+![AWS 3-Tier Production Architecture](./architecture.png)
